@@ -26,7 +26,7 @@ token = util.prompt_for_user_token(
 )
 
 def get_track_lyrics(track_name, artists):
-    genius = lyricsgenius.Genius("MRnCcT8B3I-doYHJ4TKJf-G5Tvz1xpV_xm66m9ZRMlXHjPXYlB4yj9bCMfq3CBBE")  # Замените "YOUR_GENIUS_API_TOKEN" на ваш собственный токен Genius API
+    genius = lyricsgenius.Genius("YOUR_API_GENIUS")  # Замените "YOUR_GENIUS_API_TOKEN" на ваш собственный токен Genius API
     song = genius.search_song(track_name, artists)
     if song:
         return song.lyrics
